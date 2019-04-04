@@ -11,17 +11,14 @@ function Nav() {
                         <Link to='/'>Landing</Link>
                     </li>
 
-                    <li>
+                    <li style={{  marginLeft: "70px"}}>
                         <Link to='/Paintball'>Paintball</Link>
                     </li>
-                    <li>
+                    <li style={{  marginLeft: "70px"}}>
                         <Link to='/YTTW'>YT/TW</Link>
                     </li>
-                    <li>
+                    <li style={{  marginLeft: "70px"}}>
                         <Link to='/code'>Coding</Link>
-                    </li>
-                    <li>
-                        <Link to='/Nope'>No route here, example of 404</Link>
                     </li>
                 </ul>
             </nav>
