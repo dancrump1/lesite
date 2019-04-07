@@ -51,7 +51,9 @@ function Landing() {
             </Tablet>
 
             <Mobile>
+                <Backimg>
                 <div>You are on a phone</div>
+                </Backimg>
             </Mobile>
 
 
