@@ -1,52 +1,47 @@
 import React from 'react';
-import bkgrnd2 from "../assets/photos/codescreenshot.JPG"
 import Styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
+import Nav from '../components/Nav';
 
-const Desktop = props => <MediaQuery { ...props } minWidth={ 1281 } />;
-const Tablet = props => <MediaQuery { ...props } minWidth={ 768 } maxWidth={ 1280 } />;
-const Mobile = props => <MediaQuery { ...props } maxWidth={ 767 } />;
+const Desktop = props => <MediaQuery {...props} minWidth={1281} />;
+const Tablet = props => <MediaQuery {...props} minWidth={768} maxWidth={1280} />;
+const Mobile = props => <MediaQuery {...props} maxWidth={767} />;
 
-const Backimg2 = Styled.div`
-background-image: url(${bkgrnd2});
-background-repeat: no-repeat;
+const Backimg = Styled.div`
+background: linear-gradient(#5614B0, #1fddff) no-repeat center center fixed;
 background-size: cover;
-background-position: top;
+background-attachment: fixed;
 width: 100%;
 height: 100vh;
+display: grid;
+grid-template-areas:'NavL NavL' 'Name Name';
+
 `;
 
-
-const LandingPBButton = Styled.div`
-color: white;
-margin-top: 9.37%;
-margin-left: 24.38%;
-font-size: 1vw;
-font-weight: bold;
+const Nameplate = Styled.div`
+background-color: #FFFCE4;
+height: 50vh;
+width: 80vw;
+margin: 0 auto;
+border-radius: 25px;
+grid-area: Name;
+text-align: center;
 `;
-
-const LandingYTButton = Styled.div`
-color: white;
-margin-left: 24.38%;
-font-size: 1vw;
-font-weight: bold;
-`;
-
 
 function Landing() {
-    console.log("Click on the words 'Paintball', 'YouTube/Twitch' or 'Coding' to navigate from this page to the rest of the site.")
     return (
-        <div style={ { display: "flex" } }>
+        <div>
             <Desktop>
+                <Backimg>
 
-                <Backimg2>
+                    <Nav className="NavL"/>
 
-                    <LandingPBButton style={ { color: "#b18dbcbd" } }>import <Link style={ { color: "#95b4da", textDecoration: "none" } } to="/paintball">Paintball</Link> from <p style={ { color: "#876756", display: "inline" } }>''../pages/Paintball';</p></LandingPBButton>
-                    <LandingYTButton style={ { color: "#b18dbcbd" } }>import <Link style={ { color: "#95b4da", textDecoration: "none" } } to="/YTTW">YouTube/Twitch</Link> from <p style={ { color: "#876756", display: "inline" } }>''../pages/YTTW';</p></LandingYTButton>
-                    <LandingYTButton style={ { color: "#b18dbcbd" } }>import <Link style={ { color: "#95b4da", textDecoration: "none" } } to="/code">Code</Link> from <p style={ { color: "#876756", display: "inline" } }>''../pages/Code';</p></LandingYTButton>
+                    <Nameplate>
+                        Hi my name is daniel crump and welcome to my website
+                    </Nameplate>
 
-                </Backimg2>
+                </Backimg>
 
 
             </Desktop>
