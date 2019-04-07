@@ -10,6 +10,11 @@ const Desktop = props => <MediaQuery { ...props } minWidth={ 1281 } />;
 const Tablet = props => <MediaQuery { ...props } minWidth={ 768 } maxWidth={ 1280 } />;
 const Mobile = props => <MediaQuery { ...props } maxWidth={ 767 } />;
 
+const Backimg = Styled.div`
+background-image: linear-gradient(#5614B0, #1fddff);
+background-attachment: fixed;
+width: 100%;
+`;
 
 const SiteGrid = Styled.div`
 display: grid;
@@ -41,15 +46,12 @@ margin: 15px
 const E4 = Styled.div`
 grid-area: E4;
 background: #f4f4f5;
-overflow: scroll;
 border: 2px solid palevioletred;
   border-radius: 3px;
 `;
 
 const E1 = Styled.div`
 grid-area: Nav;
-border: 2px solid palevioletred;
-  border-radius: 3px;
 `;
 
 const E5 = Styled.div`
@@ -66,6 +68,7 @@ class PB extends React.Component {
     return (
       <div>
         <Desktop>
+          <Backimg>
           <SiteGrid>
             <E1>
               <Nav className="Nav" />
@@ -157,6 +160,7 @@ class PB extends React.Component {
 
             </E4>
           </SiteGrid>
+          </Backimg>
         </Desktop>
 
         <Tablet>

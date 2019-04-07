@@ -4,6 +4,11 @@ import Styled from "styled-components";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+const Backimg = Styled.div`
+background-image: linear-gradient(#5614B0, #1fddff);
+background-attachment: fixed;
+width: 100%;
+`;
 
 const SiteGrid = Styled.div`
 display: grid;
@@ -23,7 +28,6 @@ text-align: center;
 `;
 const E3 = Styled.div`
 grid-area: E3;
-background: green;
 text-align: center;
 `;
 const E4 = Styled.div`
@@ -47,6 +51,7 @@ class P1 extends React.Component {
 
     render() {
         return (
+            <Backimg>
             <SiteGrid>
                 <Nav className="Nav" />
                 <E2>
@@ -123,6 +128,7 @@ class P1 extends React.Component {
                 <E6 />
                 <E4 />
             </SiteGrid>
+            </Backimg>
         )
     }
 }
