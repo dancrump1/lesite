@@ -25,22 +25,27 @@ grid-gap: 10px
 const E2 = Styled.div`
 grid-area: E2;
 text-align: center;
+margin: 10px;
 `;
 const E3 = Styled.div`
 grid-area: E3;
 text-align: center;
+margin: 10px;
 `;
 const E4 = Styled.div`
 grid-area: E4;
 background: yellow;
+margin: 10px;
 `;
 const E5 = Styled.div`
 grid-area: E5;
 background: black;
+margin: 10px;
 `;
 const E6 = Styled.div`
 grid-area: E6;
 background: red;
+margin: 10px;
 `;
 
 
