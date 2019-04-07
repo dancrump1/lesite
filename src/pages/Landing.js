@@ -52,7 +52,7 @@ function Landing() {
 
             <Mobile>
                 <Backimg>
-                <div>You are on a phone</div>
+                 <Nameplate>Hi mah nem is dan</Nameplate>
                 </Backimg>
             </Mobile>
 
