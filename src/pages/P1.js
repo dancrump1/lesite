@@ -39,12 +39,11 @@ margin: 10px;
 `;
 const E5 = Styled.div`
 grid-area: E5;
-background: black;
+text-align: center;
 margin: 10px;
 `;
 const E6 = Styled.div`
 grid-area: E6;
-background: red;
 margin: 10px;
 `;
 
@@ -116,6 +115,8 @@ class P1 extends React.Component {
                     </Carousel>
                 </E3>
                 <E5>
+                <h1>Only the BEST clips</h1>
+
                     <Carousel showThumbs={ false }>
                         <div>
                             <iframe
@@ -130,7 +131,8 @@ class P1 extends React.Component {
                         </div>
                     </Carousel>
                 </E5>
-                <E6 />
+                <E6>
+                </ E6>
                 <E4 />
             </SiteGrid>
             </Backimg>
