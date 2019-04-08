@@ -12,12 +12,16 @@ height: 100vh;
 const SiteGrid = Styled.div`
 display: grid;
 grid-template-areas: 
-'Nav Nav Nav'
+'Hea Hea Hea'
 'E2 E2 E2'
 'E3 E3 E3'
 'E4 E4 E4';
 grid-template-columns: 1fr 1fr 3fr;
 grid-gap: 60px;
+`;
+
+const E1 = Styled.div`
+grid-area: Hea;
 `;
 
 const E2 = Styled.div`
@@ -41,10 +45,12 @@ function CodingP() {
         <div>
             <Backimg>
                 <SiteGrid>
-                <Nav />
-                <E2>Github or something</E2>
-                <E3>CodePen or something</E3>
-                <E4>Links to all current projects</E4>
+                    <E1>
+                        <Nav />
+                    </E1>
+                    <E2>Github or something</E2>
+                    <E3>CodePen or something</E3>
+                    <E4>Links to all current projects</E4>
                 </SiteGrid>
             </Backimg>
         </div>

@@ -1,7 +1,8 @@
 .Hea {
-  background: #1fddff;
+background: #1fddff;
 height: 50px;
-position: fixed;
+margin: 0 auto;
+/* position: fixed; */
 z-index: 1;
 width: 50%;
 left: 25%;
@@ -12,10 +13,6 @@ border-radius: 0px 0px 15px 15px;
   content: '';
   display: table;
   clear: both;
-}
-
-nav {
-  /* float: right; */
 }
 
 nav ul {
@@ -58,4 +55,36 @@ nav a::before {
 
 nav a:hover::before {
   width: 100%;
+}
+
+/* IFrames from YT and FB */
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* IFrames from FB for pics */
+
+.picWrapper{
+  position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.picWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
