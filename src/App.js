@@ -13,40 +13,39 @@ class App extends Component {
   render() {
 
     return (
-<Router>
-  <Switch>
+      <Router>
+        <Switch>
 
-    <Route 
-      exact path="/"
-      component={Landing} />}
-    />
+          <Route
+            exact path="/"
+            component={Landing}
+          />
 
-    <Route
-      exact path="/YTTW"
-      component={P1} />}
-    />
-    
-    <Route 
-      exact path="/paintball" 
-      component={PB}
-    />
+          <Route
+            exact path="/YTTW"
+            component={P1} />
 
-<Route 
-      exact path="/code" 
-      component={CodingP}
-    />
+          <Route
+            exact path="/paintball"
+            component={PB}
+          />
 
-    <Route 
-      exact path="/admin" 
-      component={Admin}
-    />
+          <Route
+            exact path="/code"
+            component={CodingP}
+          />
 
-    <Route
-      component={NoMatch}
-    />
+          <Route
+            exact path="/admin"
+            component={Admin}
+          />
 
-  </Switch>
-</Router>
+          <Route
+            component={NoMatch}
+          />
+
+        </Switch>
+      </Router>
     )
   }
 }

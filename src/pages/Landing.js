@@ -35,8 +35,7 @@ object-fit: contain;
 
 const NameplatePic = Styled.img.attrs({ src: MountainPic })`
 height: auto;
-width: 75%;
-transform: rotate(90deg);
+height: 600px;
 margin: 15px;
 `;
 
@@ -49,8 +48,7 @@ position: relative;
 
 const NameplatePicM = Styled.img.attrs({ src: MountainPic })`
 height: auto;
-width: 75%;
-transform: rotate(90deg);
+height: 200px;
 margin: 0 auto;
 `;
 

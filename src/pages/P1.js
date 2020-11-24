@@ -69,15 +69,6 @@ class P1 extends React.Component {
                         <h1>My experience with youtube</h1>
 
                         <Carousel showThumbs={false}>
-                            <div className="videoWrapper">
-                                <iframe
-                                    id="player"
-                                    title="vid1"
-                                    type="text/html"
-                                    src="https://www.youtube.com/embed/ZFWLSzuvKPE"
-                                    frameBorder="0">
-                                </iframe>
-                            </div>
 
                             <div className="videoWrapper">
                                 <iframe
@@ -88,6 +79,16 @@ class P1 extends React.Component {
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 >
+                                </iframe>
+                            </div>
+                            <div className="videoWrapper">
+                                <iframe
+                                    id="player"
+                                    title="vid1"
+                                    type="text/html"
+                                    src="https://www.youtube.com/embed/ZFWLSzuvKPE"
+                                    frameBorder="0"
+                                    >
                                 </iframe>
                             </div>
                         </Carousel>
